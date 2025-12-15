@@ -1,3 +1,97 @@
-/* CSS principal igual al que el usuario entregó */
-body { background: #fff9f9; font-family: Poppins; }
-.servicio { display:block; text-decoration:none; color:#333; }
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background: #fff9f9;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #d96c8f;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* Servicios */
+.servicios {
+  padding: 60px 40px;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.servicio {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.servicio:hover {
+  transform: translateY(-6px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}

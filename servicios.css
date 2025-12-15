@@ -1,0 +1,63 @@
+/* Contenedor principal */
+.servicio-detalle {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    display: flex;
+    gap: 30px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  }
+  
+  /* Imagen */
+  .servicio-detalle img {
+    width: 320px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  /* Info */
+  .info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .info ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Precio */
+  .precio {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0;
+  }
+  
+  /* Botón */
+  .btn-reserva {
+    display: inline-block;
+    padding: 12px 26px;
+    background: #d96c8f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  
+  .btn-reserva:hover {
+    background: #c65a7f;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .servicio-detalle {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .servicio-detalle img {
+      width: 100%;
+    }
+  }
+  
